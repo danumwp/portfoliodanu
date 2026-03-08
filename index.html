@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>danucarissa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+            <div class="contact-info">
+                <i class="fas fa-mobile-alt"></i> 0852-3534-8912
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>DANUMERTHA<br> <span class="bold-text">WARDHANA PUTRA</span></h1>
+            <p class="subtitle">Content Creator | Graphic Designer</p>
+            <div class="cta-buttons">
+                <a href="#resume" class="btn">Resume</a>
+                <a href="#portfolio" class="btn">Portfolio</a>
+            </div>
+        </div>
+        
+        <div class="social-icons">
+            <span class="follow-text">Follow Us</span>
+            <a href="https://www.instagram.com/danumwp/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@danucarissa" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/6285235348912" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <section id="about" class="section-content">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="inifoto/coste1.jpeg" alt="Danumertha">
+            </div>
+
+            <div class="about-text-content">
+                <h4 class="about-subtitle"> — ABOUT ME</h4>
+                <h2 class="about-title">DANUMERTHA WARDHANA PUTRA</h2>
+                <p>
+                    Lulusan <b>Teknik Audio Video dari SMKN 2 Surabaya</b> yang punya antusiasme tinggi di industri kreatif. 
+                    Berawal dari peran sebagai <b>Tim Kreatif organisasi di sekolah</b>, aku mengasah insting visual untuk membangun 
+                    <i>engagement</i> komunitas yang solid.
+                </p>
+                <p>
+                    Selama 1 tahun terakhir, aku mendalami peran sebagai <b>Content Creator di PT Harapan Kita Jaya Perkasa (HKJP)</b>. 
+                    Pengalaman di lapangan ini mengasah kemampuan aku dalam mengeksekusi ide menjadi konten yang <i>impactful</i>. 
+                    Sekarang, aku menggabungkan latar belakang teknis audio-video dengan kreativitas <b>Graphic Design</b> 
+                    untuk menghasilkan karya yang <i>fresh</i> dan relevan.
+                </p>
+
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">PHOTOSHOP</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">PREMIERE PRO</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">AFTER EFFECT</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">CAPCUT</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">CANVA</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section-content">
+        <h2 class="section-title">PORTFOLIO</h2>
+        
+        <div class="portfolio-filter">
+            <button class="filter-btn active" onclick="filterPortfolio('all')">ALL</button>
+            <button class="filter-btn" onclick="filterPortfolio('poster')">POSTER</button>
+            <button class="filter-btn" onclick="filterPortfolio('motiongraphic')">MOTION GRAPHIC</button>
+            <button class="filter-btn" onclick="filterPortfolio('merchandise')">MERCHANDISE</button>
+            <button class="filter-btn" onclick="filterPortfolio('videography')">VIDEOGRAPHY</button>
+            <button class="filter-btn" onclick="filterPortfolio('fotography')">FOTOGRAPHY</button>
+        </div> 
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="merchandise">
+                <img src="foto/sticker smekda/10 TAHUN.png" alt="10 TAHUN">
+                <div class="overlay"><h3>BERKIBAR</h3></div>
+            </div>
+            <div class="portfolio-item" data-category="merchandise">
+                <img src="foto/sticker smekda/10 YEARS LONG JOURNEY.png" alt="10 YEARS">
+                <div class="overlay"><h3>10 YEARS JOURNEY</h3></div>
+            </div>
+            <div class="portfolio-item" data-category="merchandise">
+                <img src="foto/sticker smekda/FUN FUTSAL.png" alt="FUN FUTSAL">
+                <div class="overlay"><h3>FUN FUTSAL 2024</h3></div>
+            </div>
+
+            <div class="portfolio-item" data-category="poster">
+                <img src="foto/poster matchday/dbl pamflet.png" alt="DBL 2024">
+                <div class="overlay"><h3>DBL 2024 POSTER</h3></div>
+            </div>
+            <div class="portfolio-item" data-category="poster">
+                <img src="foto/hkjp/poster hari besar/Chinese New Year Story.png" alt="CNY 2026">
+                <div class="overlay"><h3>CHINESE NEW YEAR 2026</h3></div>
+            </div>
+
+            <div class="portfolio-item" data-category="motiongraphic">
+                <video autoplay loop muted playsinline>
+                    <source src="video/smekda/3d/teaser.mp4" type="video/mp4">
+                </video>
+                <div class="overlay"><h3>TEASER T-SHIRT 2024</h3></div>
+            </div>
+            <div class="portfolio-item" data-category="motiongraphic">
+                <video autoplay loop muted playsinline>
+                    <source src="video/smekda/3d/dbl day 2 tomorrow.mp4" type="video/mp4">
+                </video>
+                <div class="overlay"><h3>DBL 2024 DAY 2</h3></div>
+            </div>
+        <div class="portfolio-item" data-category="motiongraphic">
+                <video autoplay loop muted playsinline>
+                    <source src="video/patuabois/budal gbt.mp4" type="video/mp4">
+                </video>
+                <div class="overlay"><h3>PATUA BOIS</h3></div>
+            </div>
+            <div class="portfolio-item" data-category="motiongraphic">
+                <video autoplay loop muted playsinline>
+                    <source src="video/smekda/dbl2025/smekda vs untung suropati.mp4" type="video/mp4">
+                </video>
+                <div class="overlay"><h3>DBL 2025 DAY 2</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portfolio Danu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function filterPortfolio(category) {
+            // 1. Update warna tombol aktif
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('onclick').includes(`'${category}'`)) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // 2. Filter Item Grid
+            const items = document.querySelectorAll('.portfolio-item');
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.classList.remove('hide');
+                    item.classList.add('show');
+                } else {
+                    item.classList.remove('show');
+                    item.classList.add('hide');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
